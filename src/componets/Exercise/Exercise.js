@@ -5,15 +5,15 @@ const Exercise = (props) => {
     const { picture, age, name, time } = props.exercise
 
     return (
-        <div >
-            <div>
-                <img src={picture} alt="" />
-                <p className='text-2xl'>{name}</p>
+        <div className='bg-gray-300	p-3 rounded-lg'>
+            <div >
+                <img className='rounded-lg' src={picture} alt="" />
+                <p className='text-2xl '>{name}</p>
                 <p>For Age : {age}</p>
                 <p>Time required : {time}s</p>
             </div>
-            <button >
-                <p>Add to list</p>
+            <button className='bg-blue-600 w-full py-2 text-white font-bold rounded-lg'>
+                Add to list
             </button>
         </div>
     );
