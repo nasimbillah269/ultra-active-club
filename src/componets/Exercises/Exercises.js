@@ -9,11 +9,18 @@ import Profile from '../Profile/Profile';
 const Exercises = () => {
 
     const [exercises, setExercise] = useState([]);
+    const [time, setTime] = useState([0])
     useEffect(() => {
         fetch("data.json")
             .then(res => res.json())
             .then(data => setExercise(data))
     }, [])
+    const handlerAddToList = (exerciseTime) => {
+        const newTime = time + exerciseTime;
+        const newExerciseTime = parseInt(newTime);
+        setTime(newExerciseTime)
+
+    }
 
     return (
         <div className='grid grid-cols-12 gap-6'>
@@ -27,6 +34,8 @@ const Exercises = () => {
                         exercises.map(exercise => <Exercise
                             key={exercise.id}
                             exercise={exercise}
+                            handlerAddToList={handlerAddToList}
+
                         ></Exercise>)
                     }
                 </div>
@@ -34,7 +43,7 @@ const Exercises = () => {
             <div className='bg-slate-300 col-span-12 sm:col-span-12 md:col-span-4 lg:col-span-3'>
                 <Profile></Profile>
                 <AddBreak></AddBreak>
-                <EexerciseDetail></EexerciseDetail>
+                <EexerciseDetail time={time}></EexerciseDetail>
 
             </div>
         </div>
