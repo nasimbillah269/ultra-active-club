@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "picture": "https://img.freepik.com/free-photo/healthy-man-training-gym_23-2147915497.jpg?w=740&t=st=1664379100~exp=1664379700~hmac=925a30ef828affe1b7d9fe6584d2ab2b4492fc0057f75a64a98876c84dc041d3",
+        "age": "20-25",
+        "name": "Bent Over Row",
+        "time": 40
+    },
+    {
+        "id": "2",
+        "picture": "https://img.freepik.com/free-photo/sport-exercise_144627-14065.jpg?w=740&t=st=1664378319~exp=1664378919~hmac=af62936480d4db7ab337a76a0bf9d33532a1fcb80821d192a0e638e91578cb76",
+        "age": "25-30",
+        "name": "Push ups",
+        "time": 30
+    },
+    {
+        "id": "3",
+        "picture": "https://img.freepik.com/free-photo/athletic-middle-age-man-doing-stomach-workouts-home_613910-14272.jpg?w=740&t=st=1664378508~exp=1664379108~hmac=7269a378dc2a0b2997f370430196fcc906eaa36aa59e500f8fead63ab5af8490",
+        "age": "23-28",
+        "name": "Abdominal Crunches",
+        "time": 33
+    },
+    {
+        "id": "4",
+        "picture": "https://img.freepik.com/free-photo/young-sportsman-getting-ready-athletic-fitness-training-outdoors_146671-19638.jpg?w=740&t=st=1664378635~exp=1664379235~hmac=37ec27306ccd8719851bc3d35335a62be1c42d6f3947ed329264e16a125e53df",
+        "age": "33-36",
+        "name": "Lunges",
+        "time": 44
+    },
+    {
+        "id": "5",
+        "picture": "https://img.freepik.com/free-photo/man-fitness-workout_144627-25329.jpg?w=740&t=st=1664378807~exp=1664379407~hmac=15407467d7277f17d98dece6b550e74a218f0cd0edcb780fb61a94fc4304d415",
+        "age": "15-20",
+        "name": "Lunges",
+        "time": 20
+    },
+    {
+        "id": "6",
+        "picture": "https://img.freepik.com/free-photo/fitness-man_23-2148137706.jpg?w=740&t=st=1664379012~exp=1664379612~hmac=2b28cbab16f0c8fc0b11bccedb51a2712204f642d70740a248b4e8a7efacd5d7",
+        "age": "12-18",
+        "name": "dumble",
+        "time": 30
+    }
+]
