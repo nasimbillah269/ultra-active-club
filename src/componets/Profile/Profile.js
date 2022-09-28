@@ -7,7 +7,7 @@ const Profile = () => {
                 <img className='w-16 h-16 rounded-full' src="pic.jpg" alt="" />
                 <h4 className='m-2 text-xl font-semibold'>Nasim Billah <br></br><span className='text-yellow'>Rajshahi Bangladesh</span></h4>
             </div>
-            <div className='flex justify-center bg-slate-200 m-4 p-2 rounded-lg'>
+            <div className='flex justify-between bg-slate-200 m-4 p-2 rounded-lg'>
                 <div >
                     <p>60kg</p>
                     <p >Weight</p>
