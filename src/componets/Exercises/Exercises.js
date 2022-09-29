@@ -23,10 +23,11 @@ const Exercises = () => {
         setTime(newExerciseTime)
 
     }
-    const [seconds, setSeconds] = useState([0])
+    const [seconds, setSeconds] = useState([0]);
     const handlerAddToBreak = (time) => {
         setSeconds(time)
         addToDb(time)
+
 
         // console.log('clicked', time);
     }
@@ -35,9 +36,13 @@ const Exercises = () => {
         <div>
             <div className='grid grid-cols-12 gap-6 bg-slate-200 pb-10'>
 
-                <div className='container mx-auto col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-9'>
+                <div className='container mx-auto col-span-12 sm:col-span-12 md:col-span-8 lg:col-span-9'>
                     <div className='ml-16'>
-                        <h3 className='text-2xl mt-4 mb-4 font-medium text-fuchsia-600'>SPECIAL-HELTHY-CLUB</h3>
+
+                        <div className='flex m-4'>
+                            <img className='w-10 h-10 rounded-full' src="logo.png" alt="" />
+                            <h4 className='m-2 text-2xl text-fuchsia-600'>SPECIAL-HELTHY-CLUB</h4>
+                        </div>
                         <h5 className='mb-4 font-semibold'>Select today’s exercise</h5>
                     </div>
                     <div className='grid sm:grid-cols-1 grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-5 mx-16'>
@@ -53,7 +58,7 @@ const Exercises = () => {
                     </div>
 
                 </div>
-                <div className='bg-white col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-3'>
+                <div className='bg-white col-span-12 sm:col-span-12 md:col-span-4 lg:col-span-3'>
                     <Profile></Profile>
                     <AddBreak handlerAddToBreak={handlerAddToBreak}></AddBreak>
                     <EexerciseDetail time={time} seconds={seconds}></EexerciseDetail>
