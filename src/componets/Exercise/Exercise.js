@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Exercise = (props) => {
-    console.log(props.exercise);
+    // console.log(props.exercise);
     const { picture, age, name, time, } = props.exercise
 
     return (

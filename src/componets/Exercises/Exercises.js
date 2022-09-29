@@ -21,6 +21,13 @@ const Exercises = () => {
         setTime(newExerciseTime)
 
     }
+    const [seconds, setSeconds] = useState([0])
+    const handlerAddToBreak = (time) => {
+        setSeconds(time)
+
+        // console.log('clicked', time);
+    }
+
 
     return (
         <div className='grid grid-cols-12 gap-6'>
@@ -42,8 +49,8 @@ const Exercises = () => {
             </div>
             <div className='bg-slate-300 col-span-12 sm:col-span-12 md:col-span-4 lg:col-span-3'>
                 <Profile></Profile>
-                <AddBreak></AddBreak>
-                <EexerciseDetail time={time}></EexerciseDetail>
+                <AddBreak handlerAddToBreak={handlerAddToBreak}></AddBreak>
+                <EexerciseDetail time={time} seconds={seconds}></EexerciseDetail>
 
             </div>
         </div>
