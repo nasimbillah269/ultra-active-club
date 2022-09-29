@@ -3,6 +3,7 @@ import AddBreak from '../AddBreak/AddBreak';
 import Exercise from '../Exercise/Exercise';
 import EexerciseDetail from '../ExerciseDetail/EexerciseDetail';
 import Profile from '../Profile/Profile';
+import { addToDb, } from '../utilites/utilitise';
 
 
 
@@ -24,17 +25,17 @@ const Exercises = () => {
     const [seconds, setSeconds] = useState([0])
     const handlerAddToBreak = (time) => {
         setSeconds(time)
+        addToDb(time)
 
         // console.log('clicked', time);
     }
 
-
     return (
-        <div className='grid grid-cols-12 gap-6'>
-            <div className='container mx-auto col-span-12 sm:col-span-12 md:col-span-8 lg:col-span-9'>
+        <div className='grid grid-cols-12 gap-6 bg-slate-200'>
+            <div className='container mx-auto col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-9'>
                 <div className='ml-16'>
-                    <h3>special helthy club</h3>
-                    <h5>Select today’s exercise</h5>
+                    <h3 className='text-2xl mt-4 mb-4 font-medium text-fuchsia-600'>SPECIAL-HELTHY-CLUB</h3>
+                    <h5 className='mb-4 font-semibold'>Select today’s exercise</h5>
                 </div>
                 <div className='grid sm:grid-cols-1 grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-5 mx-16'>
                     {
@@ -47,7 +48,7 @@ const Exercises = () => {
                     }
                 </div>
             </div>
-            <div className='bg-slate-300 col-span-12 sm:col-span-12 md:col-span-4 lg:col-span-3'>
+            <div className='bg-white col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-3'>
                 <Profile></Profile>
                 <AddBreak handlerAddToBreak={handlerAddToBreak}></AddBreak>
                 <EexerciseDetail time={time} seconds={seconds}></EexerciseDetail>
